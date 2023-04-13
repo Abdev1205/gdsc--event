@@ -1,0 +1,52 @@
+<!--All images and audio are not my property. All credits to its official owner-->
+<!--Sources of image: Flaticon, Opengameart
+Souces of audio: Opengameart-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Falling Game</title>
+
+	<!--Website icon-->
+	<link rel="shortcut icon" type="image/png" href="./images/icon.png">
+
+	<!--Style sheet-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="holder">
+		<!--Game board-->
+		<div id="gameboard">
+			<!-- game components -->
+
+			<!-- spikes: this is the row that the character has to avoid touching -->
+			<div id="spikes"></div>
+
+			<!-- game board: this is holding all the game elements -->
+			<div id="board">
+				<!-- game: it holds the character and the blocks of the game -->
+
+				<!-- there are two blocks and one hole
+                    blocks are platforms that are generated after some time interval
+                    hole is the space that is present between two blocks and allows the character to pass through it along with scoring one point
+                -->
+				<div id="game">
+					<div id="character"></div>
+				</div>
+			</div>
+
+			<!-- this is just the base that we have added the game console
+                just to add the confuse the user ki from where the next hole is going to extend from -->
+			<div id="platform"></div>
+		</div>
+	</div>
+
+	<!-- calling the script.js file to add functionalities to our game console -->
+	<script src="script.js"></script>
+</body>
+
+</html>

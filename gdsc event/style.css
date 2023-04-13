@@ -1,0 +1,82 @@
+:root {
+  --gamewidth: 400px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+}
+
+#holder {
+  width: var(--gamewidth);
+  height: 511px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameboard {
+  background-image: url("./images/bg.png");
+  background-size: 400px 535px;
+}
+
+#board {
+  width: var(--gamewidth);
+  overflow: hidden;
+}
+
+#game {
+  width: var(--gamewidth);
+  height: 450px;
+}
+
+#spikes {
+  width: var(--gamewidth);
+  height: 40px;
+  background-image: url("./images/spike.png");
+  background-repeat: space repeat-x;
+  background-size: 25px 40px;
+}
+
+#platform {
+  width: var(--gamewidth);
+  height: 20px;
+  background-image: url("./images/platform.png");
+  background-repeat: space repeat-x;
+  background-size: 25px 25px;
+  overflow: hidden;
+}
+
+#character {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  top: 370px;
+  left: 190px;
+  background: #000;
+  z-index: 1000000; /*to make sure it is always on top*/
+}
+
+.block {
+  width: 400px;
+  height: 20px;
+  background: #31dbea;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}
+
+.hole {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  top: 100px;
+  background: #fff;
+  margin-top: -20px;
+}
